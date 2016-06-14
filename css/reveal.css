@@ -402,6 +402,29 @@ html:-moz-full-screen-ancestor {
 .reveal .slides > section > section.future {
   opacity: 0; }
 
+.reveal section div img {
+  position: absolute;
+}
+
+.reveal .left {
+  left: 0;
+}
+.reveal .right {
+  right: 0;
+}
+.reveal .overlap {
+  z-index: 2;
+}
+.reveal .top {
+  top: 0;
+}
+.reveal .bottom {
+  bottom: 0;
+}
+.reveal .noShadow {
+  box-shadow: none;
+}
+
 /*********************************************
  * Mixins for readability of transitions
  *********************************************/

@@ -424,6 +424,12 @@ html:-moz-full-screen-ancestor {
 .reveal .noShadow {
   box-shadow: none;
 }
+.reveal #pucca-bridge {
+  top: 100px;
+}
+.black {
+  color: #000000 !important;
+}
 
 /*********************************************
  * Mixins for readability of transitions

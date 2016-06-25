@@ -1,173 +1,281 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+    <title>reveal.js</title>
 
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/white.css">
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/white.css">
 
-		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section data-background-image="lib/images/walkshed-hero.jpg">
-					<h1><strong>Spatial</strong> Analysis</h1>
-					<h2>in the <strong>Developing</strong> World</h2>
-					<h4><em>Measuring Access with</em></h4>
-					<h4><em>OpenStreetMap & OpenTripPlanner</em></h4>
-				</section>
-				<section data-background-image="lib/images/walkshed-hero.jpg">
-				</section>
-				<section>
-					<div class="stretch">
-						<img class="left" width="450" src="lib/images/kenya-mobile-money-agent.jpg">
-						<img class="left bottom" width="450" src="lib/images/uganda-mobile-money-agent-usage.jpg">
-						<img class="right" width="475" src="lib/images/kenya-commercial-bank.jpg">
-					</div>
-				</section>
-				<section>
-					<img class="right" width="350" src="lib/images/kenya-atm.jpg">
-					<img class="left" width="600" src="lib/images/ATMs-per-100000.png">
-				</section>
-				<section>
-					<div class="stretch">
-						<img class="right top overlap" width="500" src="lib/images/gates-fsp.png">
-						<img class="left bottom" width="600" src="lib/images/uganda-hot-osm.png">
-					</div>
-				</section>
-				<section>
-					<img src="lib/images/uganda-hot-osm-overpass-turbo-query.png">
-				</section>
-				<section>
-					<img class="fragment noShadow" width="100" src="lib/images/buffer1.png">
-					<img class="fragment noShadow" width="100" src="lib/images/buffer2.png">
-					<img class="fragment noShadow" width="100" src="lib/images/buffer3.png">
-					<img class="fragment noShadow" width="100" src="lib/images/buffer4.png">
-					<img class="fragment noShadow" width="100" src="lib/images/buffer5.png">
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+</head>
+<body>
+<div class="reveal">
+    <div class="slides">
+        <section data-background-image="lib/images/walkshed-hero.jpg">
+            <h1><strong>Spatial</strong> Analysis</h1>
 
-					<img width="700" src="lib/images/uganda-cicos-5km.png">
-				</section>
-				<section>
-					<img class="stretch" src="lib/images/urban-planning-walkshed.jpg">
-				</section>
-				<section>
-					<div class="stretch">
-						<img class="left top" width="600" src="lib/images/kenya-points-along-osm-roads.png">
-						<img class="right bottom" width="500" src="lib/images/kenya-chart-cico-road-distance.png">
-					</div>
-				</section>
-				<section>
-					<video data-autoplay class="stretch" src="lib/images/opentripplanner_trimet.mp4"></video>
-				</section>
-				<section>
-					<img class="stretch" src="lib/images/nairobi-isochrone-example.png">
-				</section>
-				<section>
-					<div class="stretch">
-						<img class="left top" width="700" src="lib/images/opentripplanner.png">
-						<img class="right bottom" width="700" src="lib/images/opentripplanner_docs.png">
-					</div>
-				</section>
-				<section>
-					<div class="stretch">
-						<img class="left top" width="600" src="lib/images/geofrabrik.png">
-						<img class="right bottom" width="700" src="lib/images/bbike.png">
-					</div>
-				</section>
-				<section>
-					<video data-autoplay class="stretch" src="lib/images/brandon-martin-anderson-shortest-path-tree.mp4"></video>
-				</section>
-				<section>
-					<div class="stretch">
-						<img class="left top" width="600" src="lib/images/otp_file_structure.png">
-						<img class="right bottom" width="600" src="lib/images/download_srtm_geotiff.png">
-					</div>
-				</section>
-				<section>
-					<video data-autoplay class="stretch" src="lib/images/otp_local_instance.mp4"></video>
-				</section>
-				<section>
-					<img width="900" src="lib/images/nairobi-isochrone-example.png">
-					<div class=" fragment overlap">
-						<img class="top left" width="600" src="lib/images/isochrone_api.png">
-						<img class="bottom right" width="700" src="lib/images/isochrone-api-parameter-snippet.png">
-					</div>
-				</section>
-				<section>
-					<video data-autoplay class="stretch" src="lib/images/otp_isochrone_leaflet_demo.mp4"></video>
-				</section>
-				<section>
-					<img class="stretch" src="lib/images/isochrones-polygons-in-QGIS.png">
-				</section>
-				<section>
-					<img class="stretch" src="lib/images/india-walkshed-use-case.png">
-				</section>
-				<section>
-					<img class="stretch" src="lib/images/more-data-meme.jpeg">
-				</section>
-				<section>
-					<video data-autoplay class="stretch" src="lib/images/tanzania-data-scarce.mp4"></video>
-				</section>
-				<section>
-					<img class="noShadow" width="200" src="lib/images/otp-snapping-threshold.png">
-					<pre><code class="hljs" data-trim contenteditable>
-// Edges will only be found if they are closer than this distance
-public static final double MAX_DISTANCE_FROM_STREET_METERS = 1000;
+            <h2>in the <strong>Developing</strong> World</h2>
+            <h4><em>Measuring Access with</em></h4>
+            <h4><em>OpenStreetMap & OpenTripPlanner</em></h4>
+        </section>
+        <section data-background-image="lib/images/walkshed-hero.jpg">
+        </section>
+        <section>
+            <div class="stretch">
+                <img class="left" width="450" src="lib/images/kenya-mobile-money-agent.jpg">
+                <img class="overlap left" width="250" src="lib/images/kenya-mma-label.png">
+                <img class="left bottom" width="450" src="lib/images/uganda-mobile-money-agent-usage.jpg">
+                <img class="overlap bottom left" width="300" src="lib/images/uganda-mma-label.png">
+                <img class="right" width="475" src="lib/images/kenya-commercial-bank.jpg">
+                <img class="overlap bottom right" width="250" src="lib/images/kenya-commercial-bank-label.png">
+            </div>
+        </section>
+        <section>
+            <img class="right" width="350" src="lib/images/kenya-atm.jpg">
+            <img class="left" width="600" src="lib/images/ATMs-per-100000.png">
+        </section>
+        <section>
+            <div class="stretch">
+                <img class="right top overlap" width="500" src="lib/images/gates-fsp.png">
+                <img class="left bottom" width="600" src="lib/images/uganda-hot-osm.png">
+            </div>
+        </section>
+        <section>
+            <img src="lib/images/uganda-hot-osm-overpass-turbo-query.png">
+        </section>
+        <section>
+            <section>
+                <img class="fragment noShadow" width="100" src="lib/images/buffer1.png">
+                <img class="fragment noShadow" width="100" src="lib/images/buffer2.png">
+                <img class="fragment noShadow" width="100" src="lib/images/buffer3.png">
+                <img class="fragment noShadow" width="100" src="lib/images/buffer4.png">
+                <img class="fragment noShadow" width="100" src="lib/images/buffer5.png">
 
-private static final double MAX_DISTANCE_FROM_STREET_DEGREES =
-MAX_DISTANCE_FROM_STREET_METERS * 180 / Math.PI
-		/ SphericalDistanceLibrary.RADIUS_OF_EARTH_IN_M;
-					</code></pre>
-				</section>
-				<section>
-					<div class="stretch">
-						<img class="left bottom" width="350" src="lib/images/tza-road-satellite-imagery.JPG">
-						<img class="right top" width="500" src="lib/images/osm-id-editor.png">
-					</div>
-				</section>
-				<section>
-					<h2>Useful Resources</h2>
-					<div>
-						<a class="left" href="http://docs.opentripplanner.org/en/latest/">http://docs.opentripplanner.org/en/latest/</a>
-						<a class="left" href="http://conveyal.com/blog/2012/07/02/analyst">http://conveyal.com/blog/2012/07/02/analyst</a>
-						<a class="left" href="http://www.gatesfoundation.org/What-We-Do/Global-Development/Financial-Services-for-the-Poor">http://www.gatesfoundation.org/What-We-Do/Global-Development/Financial-Services-for-the-Poor</a>
-						<a class="left" href="http://news.spatialdev.com/walksheds-tool/">http://news.spatialdev.com/walksheds-tool/</a>
-					</div>
+                <img width="700" src="lib/images/uganda-cicos-5km.png">
+            </section>
+            <section>
+                <img width="600" src="lib/images/ATMs-per-100000.png">
+            </section>
+        </section>
+        <section>
+            <div class="stretch">
+                <img class="left top" width="300" src="lib/images/elevation.JPG">
+                <img class="top right" width="600" src="lib/images/obstructing-water-body.jpg">
+                <img class="left bottom" width="600" src="lib/images/roads-for-walking.jpg">
+            </div>
+        </section>
+        <section>
+            <section>
+                <img class="stretch" width="600" src="lib/images/kenya-points-along-osm-roads.png">
+            </section>
+            <section>
+                <h4 style="color:#000000">Distance from Financial Point to OSM Road, Kenya</h4>
+                <p style="font-size:16px; transform: rotate(-90deg);position:absolute;left:-100px;top:50%;"># Financial Points</p>
+                <iframe style="overflow:hidden;margin:5px 5px auto auto;" class="stretch" scrolling="no" id="chart-frame" data-chart></iframe>
+                <p style="font-size:16px;">Distance to Nearest Road</p>
+            </section>
+        </section>
+        <section>
+            <video data-autoplay class="stretch" src="lib/images/opentripplanner_trimet.mp4"></video>
+        </section>
+        <section>
+            <img class="stretch" src="lib/images/nairobi-isochrone-example.png">
+        </section>
+        <section></section>
+        <section>
+            <div class="stretch">
+                <img class="left top" width="700" src="lib/images/opentripplanner.png">
+                <img class="right bottom" width="700" src="lib/images/opentripplanner_docs.png">
+            </div>
+        </section>
+        <section>
+            <div class="stretch">
+                <img class="left top" width="600" src="lib/images/geofrabrik.png">
+                <img class="right bottom" width="700" src="lib/images/bbike.png">
+            </div>
+        </section>
+        <section>
+            <video data-autoplay class="stretch"
+                   src="lib/images/brandon-martin-anderson-shortest-path-tree.mp4"></video>
+        </section>
+        <section>
+            <div class="stretch">
+                <img class="left top" width="600" src="lib/images/otp_file_structure.png">
+                <img class="right bottom" width="600" src="lib/images/download_srtm_geotiff.png">
+            </div>
+        </section>
+        <section>
+            <video data-autoplay class="stretch" src="lib/images/otp_local_instance.mp4"></video>
+        </section>
+        <section>
+            <section>
+                <img width="900" src="lib/images/nairobi-isochrone-example.png">
+            </section>
+            <section data-transition="zoom">
+                <div class="stretch">
+                    <img class="top left" width="600" src="lib/images/isochrone_api.png">
+                    <img class="bottom right" width="700" src="lib/images/isochrone-api-parameter-snippet.png">
+                </div>
+            </section>
+        </section>
+        <section>
+            <video data-autoplay class="stretch" src="lib/images/otp_isochrone_leaflet_demo.mp4"></video>
+        </section>
+        <section>
+            <img class="stretch" src="lib/images/isochrones-polygons-in-QGIS.png">
+        </section>
+        <section>
+            <h4 class="black">Offsite ATMs, Uganda</h4>
+            <img width="600" src="lib/images/uganda-atms-buffer-vs-isochrones.png">
 
-				</section>
-			</div>
-		</div>
+            <div>
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Polygon</th>
+                        <th>Unit</th>
+                        <th>Pop within Access</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Buffer</td>
+                        <td>5 km</td>
+                        <td>6,406,973</td>
+                    </tr>
+                    <tr>
+                        <td>Isochrone</td>
+                        <td>1 hour</td>
+                        <td>4,502,957</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <section></section>
+        <section>
+            <section>
+                <img class="stretch" src="lib/images/india-walkshed-use-case.png">
+            </section>
+            <section>
+                <div class="stretch">
+                    <img class="bottom left" width="500" src="lib/images/osm-tag-permissions.png">
+                    <img class="top left" width="500" src="lib/images/osm-default-tags.png">
+                    <img id="pucca-bridge" class="right" width="550" src="lib/images/india-gomti-bridge.png">
+                </div>
+            </section>
+        </section>
+        <section></section>
+        <section>
+            <img class="stretch" src="lib/images/more-data-meme.jpeg">
+        </section>
+        <section>
+            <video data-autoplay class="stretch" src="lib/images/tanzania-data-scarce.mp4"></video>
+        </section>
+        <section>
+            <img class="noShadow" width="200" src="lib/images/otp-snapping-threshold.png">
+					<pre><code class="java" data-trim contenteditable>
+                        // Edges will only be found if they are closer than this distance
+                        public static final double MAX_DISTANCE_FROM_STREET_METERS = 1000;
 
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.js"></script>
+                        private static final double MAX_DISTANCE_FROM_STREET_DEGREES =
+                        MAX_DISTANCE_FROM_STREET_METERS * 180 / Math.PI
+                        / SphericalDistanceLibrary.RADIUS_OF_EARTH_IN_M;
+                    </code></pre>
+        </section>
+        <section>
+            <div class="stretch">
+                <img class="left bottom" width="350" src="lib/images/tza-road-satellite-imagery.JPG">
+                <img class="right top" width="500" src="lib/images/osm-id-editor.png">
+            </div>
+        </section>
+        <section>
+            <h2>Useful Resources</h2>
+            <ol>
+                <li><a class="left" href="http://docs.opentripplanner.org/en/latest/">http://docs.opentripplanner.org/en/latest/</a>
+                </li>
+                <li><a class="left" href="http://conveyal.com/blog/2012/07/02/analyst">http://conveyal.com/blog/2012/07/02/analyst</a>
+                </li>
+                <li><a class="left"
+                       href="http://www.gatesfoundation.org/What-We-Do/Global-Development/Financial-Services-for-the-Poor">http://www.gatesfoundation.org/What-We-Do/Global-Development/Financial-Services-for-the-Poor</a>
+                </li>
+                <li><a class="left" href="http://news.spatialdev.com/walksheds-tool/">http://news.spatialdev.com/walksheds-tool/</a>
+                </li>
+            </ol>
 
-		<script>
-			// More info https://github.com/hakimel/reveal.js#configuration
-			Reveal.initialize({
-				history: true,
+        </section>
+    </div>
+</div>
 
-				// More info https://github.com/hakimel/reveal.js#dependencies
-				dependencies: [
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
-				]
-			});
-		</script>
-	</body>
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.js"></script>
+
+<script>
+    // More info https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+        history: true,
+        chart: {
+            items: [
+                {
+                    selector: "#chart-frame",
+                    type: "bar",
+                    label:"Distance from Financial Point to Nearest OSM Road, Kenya",
+                    data: {
+                        labels: ["0-100m", "100-500m", "500-1,000m", "1,000-2,000m", "2,000-5,000m", "5,000-10,000m", ">10,000m"],
+                        datasets: [
+                            {
+                                label: "Distance from Financial Point to Nearest OSM Road, Kenya",
+                                fillColor: "rgba(255,83,13,.5)",
+                                strokeColor: "rgba(255,83,13,.8)",
+                                highlightFill: "rgba(255,83,13,.75)",
+                                highlightStroke: "rgba(255,83,13,1)",
+                                data: [37377, 24665, 6683, 4837, 5232, 3509, 972]
+                            }
+                        ]
+                    },
+                    options: {
+                        tooltips: {enabled: false},
+                        responsive: true
+                    }
+                }
+            ]
+        },
+
+        // More info https://github.com/hakimel/reveal.js#dependencies
+        dependencies: [
+            {src: 'plugin/markdown/marked.js'},
+            {src: 'plugin/markdown/markdown.js'},
+            {src: 'plugin/chart/Chart.min.js'},
+            {src: 'plugin/chart/charted.js'},
+            {src: 'plugin/notes/notes.js', async: true},
+            {
+                src: 'plugin/highlight/highlight.js', async: true, callback: function () {
+                hljs.initHighlightingOnLoad();
+            }
+            }
+        ]
+    });
+
+    Reveal.addEventListener("slidechanged", function () {
+        setTimeout(function () { // Timeout required to load the plugin
+            // the RevealChart has iframe ids as properties
+            // (replacing "-" with "_")
+            console.log(RevealChart);
+        }, 500);
+    }, false);
+</script>
+</body>
 </html>

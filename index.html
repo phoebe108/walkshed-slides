@@ -31,8 +31,6 @@
             <h4><em>Measuring Access with</em></h4>
             <h4><em>OpenStreetMap & OpenTripPlanner</em></h4>
         </section>
-        <section data-background-image="lib/images/walkshed-hero.jpg">
-        </section>
         <section>
             <div class="stretch">
                 <img class="left" width="450" src="lib/images/kenya-mobile-money-agent.jpg">
@@ -97,12 +95,12 @@
         <section>
             <img class="stretch noShadow" width="700" src="lib/images/otp-analyst-workflow.png">
         </section>
-        <!--<section>-->
-            <!--<div class="stretch">-->
-                <!--<img class="left top" width="700" src="lib/images/opentripplanner.png">-->
-                <!--<img class="right bottom" width="700" src="lib/images/opentripplanner_docs.png">-->
-            <!--</div>-->
-        <!--</section>-->
+        <section>
+            <div class="stretch">
+                <img class="left top" width="700" src="lib/images/opentripplanner.png">
+                <img class="right bottom" width="700" src="lib/images/opentripplanner_docs.png">
+            </div>
+        </section>
         <section>
             <div class="stretch">
                 <img class="left top" width="600" src="lib/images/geofrabrik.png">
@@ -112,13 +110,14 @@
         <section>
             <video data-autoplay class="stretch"
                    src="lib/images/brandon-martin-anderson-shortest-path-tree.mp4"></video>
+            <p style="font-size:24px;">Brandon Martin-Anderson's Growing Shortest Path Tree of Seattle</p>
         </section>
         <section>
             <div class="stretch">
-                <img class="right top" width="500" src="lib/images/otp_file_structure.png">
+                <img class="left top" width="600" src="lib/images/otp_file_structure.png">
                 <img class="right bottom" width="500" src="lib/images/download_srtm_geotiff.png">
-                <img class="left" style="top:75px;" width="450" src="lib/images/opentripplanner.png">
-                <img class="left" style="bottom:75px;" width="450" src="lib/images/opentripplanner_docs.png">
+                <!--<img class="left" style="top:75px;" width="450" src="lib/images/opentripplanner.png">-->
+                <!--<img class="left" style="bottom:75px;" width="450" src="lib/images/opentripplanner_docs.png">-->
             </div>
         </section>
         <section>
@@ -194,12 +193,12 @@
         <section>
             <img class="noShadow" width="200" src="lib/images/otp-snapping-threshold.png">
 					<pre><code class="java" data-trim contenteditable>
-                        // Edges will only be found if they are closer than this distance
-                        public static final double MAX_DISTANCE_FROM_STREET_METERS = 1000;
+// Edges will only be found if they are closer than this distance
+public static final double MAX_DISTANCE_FROM_STREET_METERS = 1000;
 
-                        private static final double MAX_DISTANCE_FROM_STREET_DEGREES =
-                        MAX_DISTANCE_FROM_STREET_METERS * 180 / Math.PI
-                        / SphericalDistanceLibrary.RADIUS_OF_EARTH_IN_M;
+private static final double MAX_DISTANCE_FROM_STREET_DEGREES =
+MAX_DISTANCE_FROM_STREET_METERS * 180 / Math.PI
+/ SphericalDistanceLibrary.RADIUS_OF_EARTH_IN_M;
                     </code></pre>
         </section>
         <section>
